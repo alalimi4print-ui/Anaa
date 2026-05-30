@@ -26,6 +26,7 @@ import {
   Layers,
   Award
 } from 'lucide-react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 
 // إعداد قاعدة بيانات Firebase
 const firebaseConfig = typeof __firebase_config !== 'undefined' ? JSON.parse(__firebase_config) : {};
@@ -412,6 +413,7 @@ export default function App() {
           </div>
         </div>
       )}
+      <SpeedInsights />
     </div>
   );
 }
